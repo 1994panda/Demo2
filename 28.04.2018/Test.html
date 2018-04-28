@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JSON Example</title>
+
+
+    <script type="text/javascript">
+        var obj1 = {
+            "books":
+                [{ "name": "C#", "author": "herbert schildt", "price": 400 },
+                 { "name": "java", "author": "herbert sahul", "price": 500 },
+                 { "name": ".net", "author": "herbert SauravGanguly", "price": 700 }],
+
+
+
+            "players": [
+                {
+                "name": "SauravGanguly", "age": 54, "country": "india"
+         },
+            { "name": "Sachin Tendulkar", "age": 64, "country": "india" },
+            {"name":"Jimmy Cook","age":65,"country":"south africa"}
+            ]
+
+        }
+
+        var i = 0;
+        document.write("<table border='2'><tr>");
+        for (i = 0; i < obj1.books.length; i++) {
+            document.write("<td>");
+            document.write("<table>");
+            document.write("<tr><td><b>Name</b></td><td>" + obj1.books[i].name + "</td></tr>");
+            document.write("<tr><td><b>Author</b></td><td>" + obj1.books[i].author + "</td></tr>");
+            document.write("<tr><td><b>Price</b></td><td>" + obj1.books[i].price + "</td></tr>");
+            document.write("</table>");
+            document.write("</td>");
+        }
+        document.write("</tr></table>");
+        document.write("<table border='2'><tr>");
+        for (i = 0; i < obj1.players.length; i++) {
+            document.write("<td>");
+            document.write("<table>");
+            document.write("<tr><td><b>Name</b></td><td>" + obj1.players[i].name + "</td></tr>");
+            document.write("<tr><td><b>Age</b></td><td>" + obj1.players[i].age + "</td></tr>");
+            document.write("<tr><td><b>Country</b></td><td>" + obj1.players[i].country + "</td></tr>");
+            document.write("</table>");
+            document.write("</td>");
+        }
+        document.write("</tr></table>");
+
+
+
+
+
+    </script>
+</head>
+<body>
+    show me
+</body>
+</html>
